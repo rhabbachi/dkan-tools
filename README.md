@@ -31,6 +31,17 @@ The `dktl` script assumes that it is being run from inside a DKAN project. A DKA
 * `config/`: All project-specific configuration and customizations.
 * `dktl.yml`: Project configuration for DKAN Tools
 
+### Starting a new project
+
+1. create new directory
+2. ``dktl docker:compose up -d``
+3. ``dktl init``
+4. ``dktl dkan:get`` OR ``git clone https://github.com/GetDKAN/dkan.git dkan``
+5. ``dktl dkan:make``
+6. ``dktl drupal:make``
+7. ``dktl dkan:install``
+
+
 ### Starting docker
 
 To run any other `dktl` commands, you must first bring up the project's Docker containers. From the root directory of the project, type:
